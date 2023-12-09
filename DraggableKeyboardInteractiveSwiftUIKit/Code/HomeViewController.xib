@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DraggableKeyboardInteractiveSwiftUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colored_image" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-XG-HR9">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4M-yW-FEK">
+                    <rect key="frame" x="151.66666666666666" y="404" width="90" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="85d-rE-L9H"/>
+                        <constraint firstAttribute="width" constant="90" id="Voe-E5-VD7"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                    <connections>
+                        <action selector="didPressButton:" destination="-1" eventType="touchUpInside" id="R0h-PB-TwI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SEH-XG-HR9" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="0KX-Cw-c5K"/>
+                <constraint firstItem="SEH-XG-HR9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="87l-Xr-oUd"/>
+                <constraint firstItem="Y4M-yW-FEK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HzF-tA-vw3"/>
+                <constraint firstAttribute="bottom" secondItem="SEH-XG-HR9" secondAttribute="bottom" id="ZFq-Ld-a7S"/>
+                <constraint firstItem="Y4M-yW-FEK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qeq-cS-trt"/>
+                <constraint firstItem="SEH-XG-HR9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zAI-zo-HSC"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="colored_image" width="1140" height="1880"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
